@@ -2,7 +2,7 @@ import React from 'react'
 import './feed.css'
 const Feed = () => {
   return (
-    <div>Feed</div>
+    <div className='feed'>Feed</div>
   )
 }
 

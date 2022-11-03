@@ -3,6 +3,7 @@ import RightBar from '../../Components/rightBar/RightBar';
 import SideBar from '../../Components/sideBar/SideBar'
 import Feed from '../../Components/feed/Feed'
 import TopBar from '../../Components/topBar/TopBar'
+import './Home.css'
 const Home = () => {
   return (
     <React.Fragment>
