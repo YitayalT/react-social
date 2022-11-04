@@ -1,6 +1,8 @@
 import React from 'react'
 import {RssFeed, Bookmark, Chat, VideoCall, Group, School, Event,  QuestionAnswer} from '@material-ui/icons'
 import './sideBar.css'
+import { Users } from '../../DummyData'
+import CloseFriend from '../closeFriend/CloseFriend'
 const SideBar = () => {
   return (
     <div className='sideBar'>
@@ -57,25 +59,10 @@ const SideBar = () => {
         <button className="sideBarButton">SHow More</button>
         <hr className='sideBarHr' />
         <ul className="sideBarFriendList">
-          <li className="sideBarFriend">
-            <img src="/assets/friends.jpg" alt="" className="sideBarFriendImage" />
-            <span className="sideBarFriendsName">Fasil Getie</span>
-          </li>
-          {/* second */}
-          <li className="sideBarFriend">
-            <img src="/assets/friends.jpg" alt="" className="sideBarFriendImage" />
-            <span className="sideBarFriendsName">Getachew Zemene</span>
-          </li>
-          {/* third */}
-          <li className="sideBarFriend">
-            <img src="/assets/friends.jpg" alt="" className="sideBarFriendImage" />
-            <span className="sideBarFriendsName">Leul Sewale</span>
-          </li>
-          {/* fourth */}
-          <li className="sideBarFriend">
-            <img src="/assets/friends.jpg" alt="" className="sideBarFriendImage" />
-            <span className="sideBarFriendsName">Natnael Tadesse</span>
-          </li>
+          {Users.map(user => (
+            <CloseFriend key={user.id} user={user} />
+         ))}
+          
         </ul>
      </div>
     </div>

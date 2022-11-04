@@ -22,17 +22,17 @@ const TopBar = () => {
         <div className="topBarIcons">
           <div className="topBarIconItem">
             <Person />
-            <span className="topBarIconBadge">1</span>
+            <span className="topBarIconBadge">6</span>
           </div>
           {/* second items */}
           <div className="topBarIconItem">
             <Chat />
-            <span className="topBarIconBadge">1</span>
+            <span className="topBarIconBadge">3</span>
           </div>
           {/* third Items */}
           <div className="topBarIconItem">
             <Notifications />
-            <span className="topBarIconBadge">1</span>
+            <span className="topBarIconBadge">10+</span>
           </div>
         </div>
         <img src="/assets/profile.jpg" alt="" className="topBarImage" />
