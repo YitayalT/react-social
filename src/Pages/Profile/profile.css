@@ -45,3 +45,45 @@
 .profileInfoDesc{
     font-weight: 300;
 }
+
+.rightBarTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rightBarInfo{
+    margin-bottom: 30px;
+}
+.rightBarInfoItem{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.rightBarInfoKey{
+    font-weight: 500;
+    color: #555;
+    margin-right: 15px;
+}
+.rightBarInfoValue{
+    font-weight: 300;
+    
+}
+.rightBarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rightBarFollowing{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.rightBarFollowingImage{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
